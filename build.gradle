@@ -34,7 +34,7 @@ test {
 }
 
 node {
-	version = "12.10.1"
+	version = "13.10.1"
 	download = true
 }
 
