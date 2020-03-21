@@ -50,9 +50,9 @@ task npmBuild(type: NpmTask) {
 
 task copyWebApp(type: Copy) {
 	from "frontend/build"
-	into 'src/main/resources/static/.'
+	into "src/main/resources/static/."
 }
 
 npmBuild.dependsOn appNpmInstall
-compileJava.dependsOn npmBuild
+copyWebApp.dependsOn npmBuild
 compileJava.dependsOn copyWebApp
