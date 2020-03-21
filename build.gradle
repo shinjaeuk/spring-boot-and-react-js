@@ -35,7 +35,6 @@ test {
 
 node {
 	version = "13.10.1"
-	download = true
 }
 
 task appNpmInstall(type: NpmTask) {
